@@ -7,11 +7,16 @@
     <UseWPF>true</UseWPF>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
     <DebugType>none</DebugType>
+    <ApplicationIcon>img\arrow.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="arrow.png" />
     <None Remove="img\arrow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="img\arrow.ico" />
   </ItemGroup>
 
   <ItemGroup>
