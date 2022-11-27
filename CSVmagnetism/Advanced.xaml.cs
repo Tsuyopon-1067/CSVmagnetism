@@ -26,6 +26,11 @@ namespace CSVmagnetism
         {
             InitializeComponent();
         }
+        public Advanced(MagArray ma)
+        {
+            InitializeComponent();
+            Renew(ma);
+        }
 
         private void FileButton_Click(object sender, RoutedEventArgs e)
         {
@@ -45,10 +50,14 @@ namespace CSVmagnetism
 
             if (ma.type == 2)
             {
-                var page = new Normal();
+                var page = new Normal(ma);
                 NavigationService.Navigate(page);
             }
 
+            Renew(ma);
+        }
+        private void Renew(MagArray ma)
+        {
             for (int i = 0; i < 44; i++)
             {
                 for (int j = 0; j < 20; j++)

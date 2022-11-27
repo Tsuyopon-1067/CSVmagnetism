@@ -21,17 +21,17 @@ namespace CSVmagnetism
             text = text.Replace("\r\n", "\n");
             string[] lines = text.Split('\n');
             // 行数から行列の大きさを判断
-            if (lines.Length == 10)
+            if (lines.Length >= 44)
+            {
+                h = 44;
+                w = 22;
+                type = 2;
+            }
+            else if (lines.Length >= 10)
             {
                 h = 10;
                 w = 10;
                 type = 1;
-            }
-            else if (lines.Length == 40)
-            {
-                h = 40;
-                w = 22;
-                type = 2;
             }
             radians = new double[h, w];
 
