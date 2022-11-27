@@ -1,0 +1,149 @@
+﻿<Page x:Class="CSVmagnetism.Normal"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CSVmagnetism"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Normal">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0" Margin="16">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <local:Arrow x:Name="a0000" Grid.Row="0" Grid.Column="0" />
+            <local:Arrow x:Name="a0001" Grid.Row="0" Grid.Column="1" />
+            <local:Arrow x:Name="a0002" Grid.Row="0" Grid.Column="2" />
+            <local:Arrow x:Name="a0003" Grid.Row="0" Grid.Column="3" />
+            <local:Arrow x:Name="a0004" Grid.Row="0" Grid.Column="4" />
+            <local:Arrow x:Name="a0005" Grid.Row="0" Grid.Column="5" />
+            <local:Arrow x:Name="a0006" Grid.Row="0" Grid.Column="6" />
+            <local:Arrow x:Name="a0007" Grid.Row="0" Grid.Column="7" />
+            <local:Arrow x:Name="a0008" Grid.Row="0" Grid.Column="8" />
+            <local:Arrow x:Name="a0009" Grid.Row="0" Grid.Column="9" />
+            <local:Arrow x:Name="a0100" Grid.Row="1" Grid.Column="0" />
+            <local:Arrow x:Name="a0101" Grid.Row="1" Grid.Column="1" />
+            <local:Arrow x:Name="a0102" Grid.Row="1" Grid.Column="2" />
+            <local:Arrow x:Name="a0103" Grid.Row="1" Grid.Column="3" />
+            <local:Arrow x:Name="a0104" Grid.Row="1" Grid.Column="4" />
+            <local:Arrow x:Name="a0105" Grid.Row="1" Grid.Column="5" />
+            <local:Arrow x:Name="a0106" Grid.Row="1" Grid.Column="6" />
+            <local:Arrow x:Name="a0107" Grid.Row="1" Grid.Column="7" />
+            <local:Arrow x:Name="a0108" Grid.Row="1" Grid.Column="8" />
+            <local:Arrow x:Name="a0109" Grid.Row="1" Grid.Column="9" />
+            <local:Arrow x:Name="a0200" Grid.Row="2" Grid.Column="0" />
+            <local:Arrow x:Name="a0201" Grid.Row="2" Grid.Column="1" />
+            <local:Arrow x:Name="a0202" Grid.Row="2" Grid.Column="2" />
+            <local:Arrow x:Name="a0203" Grid.Row="2" Grid.Column="3" />
+            <local:Arrow x:Name="a0204" Grid.Row="2" Grid.Column="4" />
+            <local:Arrow x:Name="a0205" Grid.Row="2" Grid.Column="5" />
+            <local:Arrow x:Name="a0206" Grid.Row="2" Grid.Column="6" />
+            <local:Arrow x:Name="a0207" Grid.Row="2" Grid.Column="7" />
+            <local:Arrow x:Name="a0208" Grid.Row="2" Grid.Column="8" />
+            <local:Arrow x:Name="a0209" Grid.Row="2" Grid.Column="9" />
+            <local:Arrow x:Name="a0300" Grid.Row="3" Grid.Column="0" />
+            <local:Arrow x:Name="a0301" Grid.Row="3" Grid.Column="1" />
+            <local:Arrow x:Name="a0302" Grid.Row="3" Grid.Column="2" />
+            <local:Arrow x:Name="a0303" Grid.Row="3" Grid.Column="3" />
+            <local:Arrow x:Name="a0304" Grid.Row="3" Grid.Column="4" />
+            <local:Arrow x:Name="a0305" Grid.Row="3" Grid.Column="5" />
+            <local:Arrow x:Name="a0306" Grid.Row="3" Grid.Column="6" />
+            <local:Arrow x:Name="a0307" Grid.Row="3" Grid.Column="7" />
+            <local:Arrow x:Name="a0308" Grid.Row="3" Grid.Column="8" />
+            <local:Arrow x:Name="a0309" Grid.Row="3" Grid.Column="9" />
+            <local:Arrow x:Name="a0400" Grid.Row="4" Grid.Column="0" />
+            <local:Arrow x:Name="a0401" Grid.Row="4" Grid.Column="1" />
+            <local:Arrow x:Name="a0402" Grid.Row="4" Grid.Column="2" />
+            <local:Arrow x:Name="a0403" Grid.Row="4" Grid.Column="3" />
+            <local:Arrow x:Name="a0404" Grid.Row="4" Grid.Column="4" />
+            <local:Arrow x:Name="a0405" Grid.Row="4" Grid.Column="5" />
+            <local:Arrow x:Name="a0406" Grid.Row="4" Grid.Column="6" />
+            <local:Arrow x:Name="a0407" Grid.Row="4" Grid.Column="7" />
+            <local:Arrow x:Name="a0408" Grid.Row="4" Grid.Column="8" />
+            <local:Arrow x:Name="a0409" Grid.Row="4" Grid.Column="9" />
+            <local:Arrow x:Name="a0500" Grid.Row="5" Grid.Column="0" />
+            <local:Arrow x:Name="a0501" Grid.Row="5" Grid.Column="1" />
+            <local:Arrow x:Name="a0502" Grid.Row="5" Grid.Column="2" />
+            <local:Arrow x:Name="a0503" Grid.Row="5" Grid.Column="3" />
+            <local:Arrow x:Name="a0504" Grid.Row="5" Grid.Column="4" />
+            <local:Arrow x:Name="a0505" Grid.Row="5" Grid.Column="5" />
+            <local:Arrow x:Name="a0506" Grid.Row="5" Grid.Column="6" />
+            <local:Arrow x:Name="a0507" Grid.Row="5" Grid.Column="7" />
+            <local:Arrow x:Name="a0508" Grid.Row="5" Grid.Column="8" />
+            <local:Arrow x:Name="a0509" Grid.Row="5" Grid.Column="9" />
+            <local:Arrow x:Name="a0600" Grid.Row="6" Grid.Column="0" />
+            <local:Arrow x:Name="a0601" Grid.Row="6" Grid.Column="1" />
+            <local:Arrow x:Name="a0602" Grid.Row="6" Grid.Column="2" />
+            <local:Arrow x:Name="a0603" Grid.Row="6" Grid.Column="3" />
+            <local:Arrow x:Name="a0604" Grid.Row="6" Grid.Column="4" />
+            <local:Arrow x:Name="a0605" Grid.Row="6" Grid.Column="5" />
+            <local:Arrow x:Name="a0606" Grid.Row="6" Grid.Column="6" />
+            <local:Arrow x:Name="a0607" Grid.Row="6" Grid.Column="7" />
+            <local:Arrow x:Name="a0608" Grid.Row="6" Grid.Column="8" />
+            <local:Arrow x:Name="a0609" Grid.Row="6" Grid.Column="9" />
+            <local:Arrow x:Name="a0700" Grid.Row="7" Grid.Column="0" />
+            <local:Arrow x:Name="a0701" Grid.Row="7" Grid.Column="1" />
+            <local:Arrow x:Name="a0702" Grid.Row="7" Grid.Column="2" />
+            <local:Arrow x:Name="a0703" Grid.Row="7" Grid.Column="3" />
+            <local:Arrow x:Name="a0704" Grid.Row="7" Grid.Column="4" />
+            <local:Arrow x:Name="a0705" Grid.Row="7" Grid.Column="5" />
+            <local:Arrow x:Name="a0706" Grid.Row="7" Grid.Column="6" />
+            <local:Arrow x:Name="a0707" Grid.Row="7" Grid.Column="7" />
+            <local:Arrow x:Name="a0708" Grid.Row="7" Grid.Column="8" />
+            <local:Arrow x:Name="a0709" Grid.Row="7" Grid.Column="9" />
+            <local:Arrow x:Name="a0800" Grid.Row="8" Grid.Column="0" />
+            <local:Arrow x:Name="a0801" Grid.Row="8" Grid.Column="1" />
+            <local:Arrow x:Name="a0802" Grid.Row="8" Grid.Column="2" />
+            <local:Arrow x:Name="a0803" Grid.Row="8" Grid.Column="3" />
+            <local:Arrow x:Name="a0804" Grid.Row="8" Grid.Column="4" />
+            <local:Arrow x:Name="a0805" Grid.Row="8" Grid.Column="5" />
+            <local:Arrow x:Name="a0806" Grid.Row="8" Grid.Column="6" />
+            <local:Arrow x:Name="a0807" Grid.Row="8" Grid.Column="7" />
+            <local:Arrow x:Name="a0808" Grid.Row="8" Grid.Column="8" />
+            <local:Arrow x:Name="a0809" Grid.Row="8" Grid.Column="9" />
+            <local:Arrow x:Name="a0900" Grid.Row="9" Grid.Column="0" />
+            <local:Arrow x:Name="a0901" Grid.Row="9" Grid.Column="1" />
+            <local:Arrow x:Name="a0902" Grid.Row="9" Grid.Column="2" />
+            <local:Arrow x:Name="a0903" Grid.Row="9" Grid.Column="3" />
+            <local:Arrow x:Name="a0904" Grid.Row="9" Grid.Column="4" />
+            <local:Arrow x:Name="a0905" Grid.Row="9" Grid.Column="5" />
+            <local:Arrow x:Name="a0906" Grid.Row="9" Grid.Column="6" />
+            <local:Arrow x:Name="a0907" Grid.Row="9" Grid.Column="7" />
+            <local:Arrow x:Name="a0908" Grid.Row="9" Grid.Column="8" />
+            <local:Arrow x:Name="a0909" Grid.Row="9" Grid.Column="9" />
+
+
+        </Grid>
+        <UniformGrid Grid.Row="1" Grid.Column="0" Columns="2">
+            <Button Content="ファイル" Click="FileButton_Click" />
+            <Button Content="保存" />
+        </UniformGrid>
+    </Grid>
+</Page>
