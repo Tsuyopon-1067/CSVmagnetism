@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Application = System.Windows.Forms.Application;
 using Microsoft.WindowsAPICodePack.Dialogs;
+using System.IO;
 
 namespace CSVmagnetism
 {
@@ -51,6 +52,7 @@ namespace CSVmagnetism
             {
                 var page = new Advanced(ma);
                 NavigationService.Navigate(page);
+                return;
             }
             Renew(ma);
         }
@@ -69,6 +71,35 @@ namespace CSVmagnetism
                     }
                 }
             }
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            var dlg = new CommonSaveFileDialog();
+            dlg.DefaultFileName = "result.png";
+            dlg.Filters.Add(new CommonFileDialogFilter("png", "*.png, *.PNG"));
+            if (dlg.ShowDialog() == CommonFileDialogResult.Ok)
+            {
+                var filename = dlg.FileName;
+
+                this.UpdateLayout();
+                var width = MagDisplay.ActualWidth;
+                var height = MagDisplay.ActualHeight;
+                var dv = new DrawingVisual();
+                using (var dc = dv.RenderOpen())
+                {
+                    dc.DrawRectangle(new BitmapCacheBrush(MagDisplay), null, new Rect(0, 0, width, height));
+                }
+                var rtb = new RenderTargetBitmap((int)width, (int)height, 96d, 96d, PixelFormats.Pbgra32);
+                rtb.Render(dv);
+
+                var encoder = new PngBitmapEncoder();
+                encoder.Frames.Add(BitmapFrame.Create(rtb));
+                FileStream fs = new FileStream(filename, FileMode.Create, FileAccess.ReadWrite);
+                encoder.Save(fs);
+                fs.Close();
+            }
+            dlg.Dispose();
         }
     }
 }

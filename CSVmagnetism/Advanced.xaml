@@ -8,12 +8,12 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Advanced">
 
-    <Grid>
+    <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="40" />
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Grid.Column="0" Margin="16">
+        <Grid x:Name="MagDisplay" Grid.Row="0" Grid.Column="0" Margin="16">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
@@ -965,8 +965,8 @@
 
         </Grid>
         <UniformGrid Grid.Row="1" Grid.Column="0" Columns="2">
-            <Button Content="ファイル" Click="FileButton_Click" />
-            <Button Content="保存" />
+            <Button Content="ファイル" Click="FileButton_Click" Margin="5, 0, 2.5, 5" />
+            <Button Content="保存" Margin="5, 0, 2.5, 5" Cursor="Hand" Click="SaveButton_Click" />
         </UniformGrid>
     </Grid>
 </Page>

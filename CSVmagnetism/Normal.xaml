@@ -8,12 +8,12 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Normal">
 
-    <Grid>
+    <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="40" />
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Grid.Column="0" Margin="16">
+        <Grid x:Name="MagDisplay" Grid.Row="0" Grid.Column="0" Margin="16">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
@@ -138,12 +138,10 @@
             <local:Arrow x:Name="a0907" Grid.Row="9" Grid.Column="7" />
             <local:Arrow x:Name="a0908" Grid.Row="9" Grid.Column="8" />
             <local:Arrow x:Name="a0909" Grid.Row="9" Grid.Column="9" />
-
-
         </Grid>
         <UniformGrid Grid.Row="1" Grid.Column="0" Columns="2">
-            <Button Content="ファイル" Click="FileButton_Click" />
-            <Button Content="保存" />
+            <Button Content="ファイル" Click="FileButton_Click" Margin="5, 0, 2.5, 5" Cursor="Hand" />
+            <Button Content="保存" Margin="5, 0, 2.5, 5" Click="SaveButton_Click" />
         </UniformGrid>
     </Grid>
 </Page>
