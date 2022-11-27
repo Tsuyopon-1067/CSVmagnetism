@@ -10,7 +10,8 @@ CSVmagnetismは某授業Aの課題におけるシミュレーション結果を�
 * WindowsOS
 
 # Download
-まだ
+https://github.com/Tsuyopon-1067/CSVmagnetism/releases/tag/v1.0
+を開いたら，下部のCSVmagnetism.v1.0.zip をダウンロード.
 
 # How to use
 起動後，画面左下のファイルボタンをクリックし，読み込みたいcsvファイルを選択します．
