@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSVmagnetism"
         mc:Ignorable="d"
+        Icon="/arrow.png"
         Title="MainWindow" Height="800" Width="800">
     <Grid>
-        <Frame Name="frame" NavigationUIVisibility="Hidden" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="93*"/>
+            <ColumnDefinition Width="707*"/>
+        </Grid.ColumnDefinitions>
+        <Frame Name="frame" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" />
     </Grid>
 </Window>

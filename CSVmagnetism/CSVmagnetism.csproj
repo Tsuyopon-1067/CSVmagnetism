@@ -5,9 +5,12 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <DebugType>none</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="arrow.png" />
     <None Remove="img\arrow.png" />
   </ItemGroup>
 
@@ -17,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="arrow.png" />
     <Resource Include="img\arrow.png" />
   </ItemGroup>
 
