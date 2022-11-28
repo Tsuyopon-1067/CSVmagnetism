@@ -24,7 +24,7 @@ namespace CSVmagnetism
         {
             InitializeComponent();
         }
-        public void SetRadian(double x)
+        public void SetDegree(double x)
         {
             rt.Angle = x;
         }

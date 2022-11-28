@@ -67,7 +67,7 @@ namespace CSVmagnetism
                     Arrow ar = this.FindName(name) as Arrow;
                     if (null != ar)
                     {
-                        ar.SetRadian(ma.Radians(i, j));
+                        ar.SetDegree(ma.Radians(i, j));
                     }
                 }
             }

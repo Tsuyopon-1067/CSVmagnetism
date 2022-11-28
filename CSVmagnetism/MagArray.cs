@@ -10,7 +10,7 @@ namespace CSVmagnetism
 {
     public class MagArray
     {
-        private double[,] radians;
+        private double[,] degrees;
         public int type { get; } = 0; // 1:必須 2:発展
         public int h { get; } = 0;
         public int w { get; } = 0;
@@ -33,7 +33,7 @@ namespace CSVmagnetism
                 w = 10;
                 type = 1;
             }
-            radians = new double[h, w];
+            degrees = new double[h, w];
 
             w = Math.Min(w, lines[0].Split(',').Length); // 横方向の要素数不足によるエラー防止
             for (int i = 0; i < h; i++)
@@ -41,14 +41,14 @@ namespace CSVmagnetism
                 string[] line = lines[i].Split(',');
                 for (int j = 0; j < w; j++)
                 {
-                    radians[i, j] = Convert.ToDouble(line[j]);
-                    radians[i, j] = radians[i, j] / (2*Math.PI) * 360;
+                    degrees[i, j] = Convert.ToDouble(line[j]);
+                    degrees[i, j] = degrees[i, j] * 360;
                 }
             }
         }
         public double Radians(int i, int j)
         {
-            return radians[i, j];
+            return degrees[i, j];
         }
     }
 }
